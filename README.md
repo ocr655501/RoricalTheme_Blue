@@ -1,5 +1,9 @@
 # Rorical Shiro
 
+**I did not actually learned php, pls don't scold me too much on my rubbish code.**
+
+**我没学过 php，所以代码非常的烂，还望各位大佬喷轻点**
+
 简体中文版 Readme 向下滑就可以啦
 
 It's a Typecho theme with a bit of cute, which extended more cute here, originally created by Rorical
