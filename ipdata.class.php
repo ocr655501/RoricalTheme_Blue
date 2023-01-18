@@ -127,6 +127,7 @@ function convertips($ip){
     $ipaddr = '可能来自火星';  
   }
   $ipaddr = iconv('gbk', 'utf-8//IGNORE', $ipaddr); 
+  $ipaddr = substr($ipaddr,0,6);
   return $ipaddr;  
 }
 ?>
