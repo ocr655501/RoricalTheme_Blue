@@ -1,10 +1,8 @@
 # Rorical Shiro
 
-**I did not actually learned php, pls don't scold me too much on my rubbish code.**
-
-**我没学过 php，所以代码非常的烂，还望各位大佬喷轻点**
-
 简体中文版 Readme 向下滑就可以啦
+
+**I did not actually learned php, pls don't scold me too much on my rubbish code.**
 
 It's a Typecho theme with a bit of cute, which extended more cute here, originally created by Rorical
 
@@ -37,6 +35,8 @@ You can find the original repository here:
 
 ---------------
 # Rorical Shiro（白）
+
+**我没学过 php，所以代码非常的烂，还望各位大佬喷轻点**
 
 一个比较可爱的 Typecho 主题，但在这里变得更可爱了~
 
