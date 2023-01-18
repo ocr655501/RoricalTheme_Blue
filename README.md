@@ -34,7 +34,7 @@ You can find the original repository here:
 
 
 ---------------
-# Rorical Shiro（白）
+# Rorical Shiro
 
 **我没学过 php，所以代码非常的烂，还望各位大佬喷轻点**
 
