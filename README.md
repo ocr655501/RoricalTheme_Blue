@@ -12,7 +12,7 @@ Initial support for Typecho version 1.2
 
 Changed main text interface font to a cuter style.
 
-IP district for comments following somewhere's network service regulation, but it may get too detailed info.
+IP district for comments following somewhere's network service regulation, ~but it may get too detailed info~ Repaired.
 
 Static site running time without plugins
 
@@ -48,7 +48,7 @@ You can find the original repository here:
 
 把主界面字体变得更可爱了
 
-为了符合网络运营规范（你懂得），上线评论区的 IP 属地功能，但是有点过于详细了。
+为了符合网络运营规范（你懂得），上线评论区的 IP 属地功能，~~但是有点过于详细了~~修了，现在只显示国家或者省份。
 
 静态博客运营时长（无需插件）
 
