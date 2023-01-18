@@ -94,9 +94,6 @@ echo $commentClass;
 <?php } ?>
 
         </div>
-        <div id="comment-refresh">
-        <?php $comments->listComments(); ?>
-        </div>
         <?php if($this->allow('comment')): ?>
         <?php if($this->user->hasLogin()): ?>
         <div id="<?php $this->respondId(); ?>" class="py-3 comment-text">
@@ -156,6 +153,9 @@ echo $commentClass;
       </div>
       <?php endif; ?>
       <?php endif; ?>
+         <div id="comment-refresh">
+        <?php $comments->listComments(); ?>
+        </div>
         <div id="comments" class=""><?php $this->comments()->to($comments); ?><?php if ($comments->have()): ?><?php $comments->pageNav('<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>', 1, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination agination-lg justify-content-center', 'itemTag' => 'li', 'textTag' => 'a', 'currentClass' =>  'page-item active','prevClass' => 'page-item','nextClass' => 'page-item','linkClass' => 'page-link','itemClass' => 'page-item')); ?><?php endif; ?></div></div>
 <script>var r = document.getElementById('<? $this->respondId() ?>'),
         input = document.createElement('input');
