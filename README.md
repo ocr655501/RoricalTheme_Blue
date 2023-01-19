@@ -29,7 +29,9 @@ https://github.com/webfontworld/gyeonggi
 
 https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13
 
-You can find the original repository here: 
+Original author contributes a lot initially, you can find the original repository here: 
+
+https://github.com/Rorical/RoricalTheme/
 
 Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter) by [quarkay](https://www.quarkay.com/), please install the plugin before apply this theme, or exception may happen.
 
@@ -57,5 +59,16 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 - 内置代码高亮，内置 $\LaTeX$ 数学公式支持。
 
 ## 致谢
+[GyyeonggiTitle](https://github.com/webfontworld/gyeonggi) 作为主界面字体，下面是它的来源。
+
+https://github.com/webfontworld/gyeonggi
+
+小米兰亭 [MiSans](https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13) 作为额外支持东亚字符的字体，下面是它的来源。
+
+https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13
+
+同时也要感谢原作者的贡献，这是主题原来的仓库地址：
+
+https://github.com/Rorical/RoricalTheme/
 
 文章浏览次数统计基于 [quarkay](https://www.quarkay.com/) 的 [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter)，请在使用主题前安装此插件，否则可能会直接报错哦
