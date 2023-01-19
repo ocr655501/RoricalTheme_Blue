@@ -9,11 +9,11 @@ It's a Typecho theme with a bit of cute, which extended more cute here, original
 ## What I made
 
 - Initial support for Typecho version 1.2
-- Changed main text interface font to a cuter style.
+- Change main interface font to a cuter style.
 - IP district for comments following somewhere's network service regulation.
-- Static site running time without plugins
-- Independent blog statistics in about page
-- Whisper for independent page (Based on comments)
+- Static site running time without any plugin.
+- Independent blog statistics in about page. (Independent page template)
+- Whisper independent page. (Based on comments)
 
 ## Highlights
 
@@ -51,7 +51,7 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 - 把主界面字体变得更可爱了
 - 为了符合网络运营规范（你懂得），上线评论区的 IP 属地功能。
 - 静态博客运营时长（无需插件）
-- 在关于页面有个博客数据统计
+- 在关于页面有个博客数据统计（需要使用对应的独立页面模板）
 - 独立页面的碎碎念功能（基于评论）
 
 ## 主题亮点
