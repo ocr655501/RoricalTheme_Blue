@@ -21,7 +21,7 @@ It's a Typecho theme with a bit of cute, which extended more cute here, original
 
 
 ## Acknowledgements
-[GyyeonggiTitle](https://github.com/webfontworld/gyeonggi) as main font interface, you can find it here:
+[GyeonggiTitle](https://github.com/webfontworld/gyeonggi) as main font interface, you can find it here:
 
 https://github.com/webfontworld/gyeonggi
 
@@ -59,7 +59,7 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 - 内置代码高亮，内置 $\LaTeX$ 数学公式支持。
 
 ## 致谢
-[GyyeonggiTitle](https://github.com/webfontworld/gyeonggi) 作为主界面字体，下面是它的来源。
+[GyeonggiTitle](https://github.com/webfontworld/gyeonggi) 作为主界面字体，下面是它的来源。
 
 https://github.com/webfontworld/gyeonggi
 
