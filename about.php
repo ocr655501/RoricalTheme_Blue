@@ -63,7 +63,6 @@
                 		<br><?php _e('评论总数：'); ?><?php $stat->publishedCommentsNum() ?>
                 		<br><?php _e('页面总数：'); ?><?php echo $stat->publishedPagesNum + $stat->publishedPostsNum; ?>
                 		<br><?php _e('累计浏览：'); ?><?php echo theAllViews(); ?>
-                		<br><?php _e('总访问量：'); ?><?php echo VisitorStatistics_Plugin::getVisitorStatistics(); ?>
                 		</p></li>
                         <?php $this->content(); ?>
                     </div>
