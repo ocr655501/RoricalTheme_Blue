@@ -4,12 +4,12 @@
 
 **I did not actually learned php, pls don't scold me too much on my rubbish code.**
 
-It's a Typecho theme with a bit of cute, which extended more cute here, originally created by Rorical
+It's a Typecho theme with a bit of cute, which extended more cute here, originally created by [Rorical](https://github.com/Rorical)
 
 ## What I made
 
 - Initial support for Typecho version 1.2
-- Change main interface font to a cuter style.
+- Change main interface font to a cuter style, embedded in webpage.
 - IP district for comments following somewhere's network service regulation.
 - Static site running time without any plugin.
 - Independent blog statistics in about page. (Independent page template)
@@ -48,11 +48,11 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 ## 我对这个主题做了什么
 
 - 支持了 Typecho 1.2
-- 把主界面字体变得更可爱了
+- 把主界面字体变得更可爱了，且在页面中内置
 - 为了符合网络运营规范（你懂得），上线评论区的 IP 属地功能。
 - 静态博客运营时长（无需插件）
 - 在关于页面有个博客数据统计（需要使用对应的独立页面模板）
-- 碎碎念独立页面（我的动态）（基于评论）
+- 碎碎念独立页面（我的动态，基于评论）
 
 ## 主题亮点
 
