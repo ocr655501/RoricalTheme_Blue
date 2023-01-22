@@ -52,7 +52,7 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 - 为了符合网络运营规范（你懂得），上线评论区的 IP 属地功能。
 - 静态博客运营时长（无需插件）
 - 在关于页面有个博客数据统计（需要使用对应的独立页面模板）
-- 独立页面的碎碎念功能（基于评论）
+- 碎碎念独立页面（我的动态）（基于评论）
 
 ## 主题亮点
 
