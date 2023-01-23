@@ -43,7 +43,7 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 
 一个比较可爱的 Typecho 主题，但在这里变得更可爱了~
 
-主题的原作者是 Rorical
+主题的原作者是 [Rorical](https://github.com/Rorical)，请大家多多支持原作者
 
 ## 我对这个主题做了什么
 
