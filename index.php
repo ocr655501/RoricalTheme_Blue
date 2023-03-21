@@ -2,10 +2,10 @@
 /**
  * 炒鸡可爱的一款主题，魔改 & 适配 Typecho 1.2！
  * 
- * @package Rorical Shiro
+ * @package Rorical Blue
  * @author Rorical & OCR655501
  * @version 1.1.20230118RC
- * @link https://github.com/ocr655501/RoricalTheme_Shiro/
+ * @link https://github.com/ocr655501/RoricalTheme_Blue/
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
