@@ -1,4 +1,4 @@
-# Rorical Shiro
+# Rorical Blue
 
 简体中文版 Readme 向下滑就可以啦
 
@@ -37,7 +37,7 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 
 
 ---------------
-# Rorical Shiro
+# Rorical Blue
 
 **我没学过 php，所以代码非常的烂，还望各位大佬喷轻点**
 
