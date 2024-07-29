@@ -35,7 +35,7 @@ Original author contributes a lot initially, you can find the original repositor
 
 https://github.com/Rorical/RoricalTheme/
 
-**Notice:** Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter) by [quarkay](https://www.quarkay.com/), please install the plugin before apply this theme, othewise you may encounter page crush
+**Notice:** Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter) by [quarkay](https://www.quarkay.com/), please install the plugin before apply this theme, othewise you may encounter page crash
 
 
 ---------------
