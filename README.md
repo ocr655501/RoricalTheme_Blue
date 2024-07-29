@@ -1,19 +1,21 @@
 # Rorical Blue
 
-简体中文版 Readme 向下滑就可以啦
+**For CN viewers:** 简体中文版 Readme 向下滑就可以啦
 
 **I did not actually learned php, pls don't scold me too much on my rubbish code.**
 
-It's a Typecho theme with a bit of cute, which extended more cute here, originally created by [Rorical](https://github.com/Rorical)
+It's a Typecho theme with a bit of cute, which extended more here.
 
-## What I made
+Theme originally created by [Rorical](https://github.com/Rorical)
 
-- Initial support for Typecho version 1.2
-- Change main interface font to a cuter style, embedded in webpage.
-- IP district for comments following somewhere's network service regulation.
+## What I modified
+
+- Fixed code for Typecho version 1.2 support.
+- Changed main interface font to a cuter style, embedded in webpage.
+- IP district display for comments following somewhere's network service regulation.
 - Static site running time without any plugin.
-- Independent blog statistics in about page. (Independent page template)
-- Whisper independent page. (Based on comments)
+- Independent blog statistics in *about* page. (Independent page template)
+- Whisper (personal posts) independent page. (Based on comments)
 
 ## Highlights
 
@@ -25,7 +27,7 @@ It's a Typecho theme with a bit of cute, which extended more cute here, original
 
 https://github.com/webfontworld/gyeonggi
 
-[MiSans](https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13) for CJK support and contents, you can find it here: **[CHINESE]**
+[MiSans](https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13) for CJK language support, you can find it here: **[CHINESE, Xiaomi Community CN]**
 
 https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13
 
@@ -33,7 +35,7 @@ Original author contributes a lot initially, you can find the original repositor
 
 https://github.com/Rorical/RoricalTheme/
 
-Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter) by [quarkay](https://www.quarkay.com/), please install the plugin before apply this theme, or exception may happen.
+**Notice:** Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter) by [quarkay](https://www.quarkay.com/), please install the plugin before apply this theme, othewise you may encounter page crush
 
 
 ---------------
@@ -45,7 +47,7 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 
 主题的原作者是 [Rorical](https://github.com/Rorical)，请大家多多支持原作者
 
-## 我对这个主题做了什么
+## 我对这个主题改了什么
 
 - 支持了 Typecho 1.2
 - 把主界面字体变得更可爱了，且在页面中内置
@@ -63,7 +65,7 @@ Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-Vie
 
 https://github.com/webfontworld/gyeonggi
 
-小米兰亭 [MiSans](https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13) 作为额外支持东亚字符的字体，下面是它的来源。
+小米兰亭 [MiSans](https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13) 作为额外支持东亚字符的字体，下面是它的来源。**[小米社区]**
 
 https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=dev.20051&ref=MIUI13
 
@@ -71,4 +73,4 @@ https://web.vip.miui.com/page/info/mio/mio/detail?postId=33935854&app_version=de
 
 https://github.com/Rorical/RoricalTheme/
 
-文章浏览次数统计基于 [quarkay](https://www.quarkay.com/) 的 [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter)，请在使用主题前安装此插件，否则可能会直接报错哦
+**注意：** 文章浏览次数统计基于 [quarkay](https://www.quarkay.com/) 的 [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter)，请在使用主题前安装此插件，否则可能会直接报错哦
