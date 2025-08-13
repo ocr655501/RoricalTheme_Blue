@@ -136,7 +136,7 @@ echo $commentClass;
               </div>
               
               <div class="col-lg-4 ml-lg-auto mt-3">
-                <button class="btn btn-lg btn-block btn-white" type="submit" id="add-comment-button">发表动态</button>
+                <button class="btn btn-lg btn-block btn-white" type="submit" id="add-comment-button">Submit</button>
                 <div class="cancel-comment-reply mt-5 align-items-center">
         			<?php $comments->cancelReply("Cancel Reply","btn btn-danger"); ?>
         		</div>
@@ -301,5 +301,6 @@ echo $commentClass;
 if(window.onload){window.onload()}
 
 </script>
+
 
 
