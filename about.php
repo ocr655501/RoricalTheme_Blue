@@ -37,15 +37,15 @@
                 <div class="card-profile-stats d-flex justify-content-center">
                   <div>
                     <span class="heading"><?php echo ViewsCounter_Plugin::getViews(); ?></span>
-                    <span class="description">浏览</span>
+                    <span class="description">views</span>
                   </div>
                   <div>
                     <span class="heading"><?php art_count($this->cid); ?></span>
-                    <span class="description">字数</span>
+                    <span class="description">words</span>
                   </div>
                   <div>
                     <span class="heading"><?php $this->commentsNum('%d'); ?></span>
-                    <span class="description">评论</span>
+                    <span class="description">comments</span>
                   </div>
                 </div>
               </div>
@@ -58,11 +58,11 @@
                         <section class="widget">
                 	<ul>
                 		<?php Typecho_Widget::widget('Widget_Stat')->to($stat); ?>
-                		<li><strong><?php _e('网站数据统计：'); ?></strong></li>
-                		<li><p><?php _e('文章总数：'); ?><?php $stat->publishedPostsNum() ?>
-                		<br><?php _e('评论总数：'); ?><?php $stat->publishedCommentsNum() ?>
-                		<br><?php _e('页面总数：'); ?><?php echo $stat->publishedPagesNum + $stat->publishedPostsNum; ?>
-                		<br><?php _e('累计浏览：'); ?><?php echo theAllViews(); ?>
+                		<li><strong><?php _e('STATISTICAL DATA: '); ?></strong></li>
+                		<li><p><?php _e('Articles: '); ?><?php $stat->publishedPostsNum() ?>
+                		<br><?php _e('Comments: '); ?><?php $stat->publishedCommentsNum() ?>
+                		<br><?php _e('Pages: '); ?><?php echo $stat->publishedPagesNum + $stat->publishedPostsNum; ?>
+                		<br><?php _e('Total views:'); ?><?php echo theAllViews(); ?>
                 		</p></li>
                         <?php $this->content(); ?>
                     </div>
@@ -85,3 +85,4 @@
 
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
+
