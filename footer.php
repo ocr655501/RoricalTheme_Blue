@@ -5,8 +5,8 @@
 	<div class="container align-items-center justify-content-md-between">
 		<div class="row">
     		<div class="col-md-6">
-    			Copyright ©  2020-<?php echo date('Y'); ?> <?php $this->options->title() ?>. 
-    			<br />已经正常运行 <?php getBuildTime(); ?>
+    			Copyright © 20XX-<?php echo date('Y'); ?> <?php $this->options->title() ?>.  // Your site creation year -> 20XX
+    			<br />Operational for: <?php getBuildTime(); ?>
     		</div>
     		<div class="col-md-6">
             <ul class="nav nav-footer justify-content-end">
@@ -203,3 +203,4 @@ $(window).scroll(function(){
 </body>
 
 </html>
+
