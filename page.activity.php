@@ -37,11 +37,11 @@
                 <div class="card-profile-stats d-flex justify-content-center">
                   <div>
                     <span class="heading"><?php echo ViewsCounter_Plugin::getViews(); ?></span>
-                    <span class="description">浏览</span>
+                    <span class="description">views</span>
                   </div>
                   <div>
                     <span class="heading"><?php $this->commentsNum('%d'); ?></span>
-                    <span class="description">动态</span>
+                    <span class="description">whispers</span>
                   </div>
                 </div>
               </div>
@@ -73,3 +73,4 @@
 
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
+
