@@ -12,7 +12,7 @@
             'category'  =>  _t('%s'),
             'search'    =>  _t('( %s )'),
             'tag'       =>  _t('< %s >'),
-            'author'    =>  _t('%s 发布的文章 <br>' )
+            'author'    =>  _t('%s: all posts <br>' )
         ), '', ''); ?>
         </span></a></h2>
     		<?php if ($this->have()): ?>
@@ -49,7 +49,7 @@
         <a href="<? print($tags['permalink']) ?>" class="badge badge-success"><? print($tags['name']) ?></a>
         <?php endforeach; ?>
         <?php else: ?>
-        <a class="badge badge-default text-white">无标签..</a>
+        <a class="badge badge-default text-white">No label</a>
         <?php endif; ?>
         </span>
         <span class="col-xs-11"><i class="fa fa-user-circle-o"></i><a class="badge badge-warning" href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a></span>
