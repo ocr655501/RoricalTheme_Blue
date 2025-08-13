@@ -4,7 +4,7 @@
 		<div class="row">
         	<div class="col-sm-3 col-6">
         		<h3>
-        <span><?php _e('归档'); ?></span>
+        <span><?php _e('Archives'); ?></span>
     	</h3>
             <?php $this->widget('Widget_Contents_Post_Date', 'limit=3&type=month&format=F Y')
             ->parse('<a href="{permalink}" class="alert  fade show" role="alert"><div class="alert alert-success ">
@@ -14,7 +14,7 @@
         		</div>
         		<div class="col-sm-3 col-6">
         <h3>
-        <span><?php _e('最新文章'); ?></span>
+        <span><?php _e('New posts'); ?></span>
     	</h3>
             <?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=3')
             ->parse('<a href="{permalink}" class="alert  fade show" role="alert"><div class="alert alert-info ">
@@ -25,7 +25,7 @@
         </div>
         <div class="col-sm-3 col-6">
         	<h3>
-        <span><?php _e('最近回复'); ?></span>
+        <span><?php _e('Recent replied'); ?></span>
     	</h3>
         <?php $this->widget('Widget_Comments_Recent','ignoreAuthor=true&limit=3')->to($comments); ?>
         <?php while($comments->next()): ?>
@@ -37,7 +37,7 @@
         	</div>
         	<div class="col-sm-3 col-6">
         	<h3>
-        <span><?php _e('搜索文章'); ?></span>
+        <span><?php _e('Search posts'); ?></span>
     	</h3>
 		<div class="form-group">
 		<form method="post" id="search" action="<?php $this->options->siteUrl(); ?>" role="search">
@@ -54,4 +54,5 @@
       </div>
 		
     </div>
+
 </section>
