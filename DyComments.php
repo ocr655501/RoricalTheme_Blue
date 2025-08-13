@@ -55,7 +55,7 @@ echo $commentClass;
                   	
                     <h5 class="title text-success breakword"><?php $comments->author(); ?></h5>
                     <a class="text-success breakword"><?php $comments->date('Y-m-d H:i'); ?></a>
-                    <p class="breakword"><font size="2">@<?php echo convertip($comments->ip); ?></font></p>
+                    <p class="breakword"><font size="2">[IP] <?php echo convertip($comments->ip); ?></font></p>
                     <?php  
 					if($comments->parent){
     						$p_comment = getPermalinkFromCoid($comments->parent);   
@@ -67,7 +67,7 @@ echo $commentClass;
 						?> 
                     <p class="breakword"><?php $comments->content(); ?></p>
                     <?php if ($comments->status == 'waiting') { ?>
-						<span class="badge badge-pill badge-default text-white">评论审核ing...</span>
+						<span class="badge badge-pill badge-default text-white">需要审核</span>
 					<?php } ?>
                   </div>
                   </div>
@@ -135,8 +135,8 @@ echo $commentClass;
 					<?php endif; ?>
               </div>
               
-              <div class="col-lg-3 ml-lg-auto mt-3">
-                <button class="btn btn-lg btn-block btn-white" type="submit" id="add-comment-button">提交！</button>
+              <div class="col-lg-4 ml-lg-auto mt-3">
+                <button class="btn btn-lg btn-block btn-white" type="submit" id="add-comment-button">发表动态</button>
                 <div class="cancel-comment-reply mt-5 align-items-center">
         			<?php $comments->cancelReply("取消回复","btn btn-danger"); ?>
         		</div>
@@ -191,11 +191,12 @@ echo $commentClass;
             	$("#add-comment-button").attr("disabled",false);	
             },
             error: function() {
-                
+            	alert("提交失败，请检查验证码或刷新页面重试。")
             },
             success: function(data) { 
                 var parser = new DOMParser()
                 var htmlDoc = parser.parseFromString(data, "text/html")
+                alert("提交成功！")
                 if(htmlDoc.getElementById("comment-refresh")){
                 ele = document.getElementsByClassName("comment-text")[0]
                 elehtml = document.getElementsByClassName("comment-text")[0].innerHTML
