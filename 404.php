@@ -19,7 +19,7 @@
        <div class="row justify-content-center align-items-center"> 
         <div class="col-lg-7 text-center pt-lg"> 
          <h1 class="display-1 text-white shake-slow shake-constant" style="font-size:10rem;">404</h1>
-         <p class="lead text-white mt-4 mb-5">We cannot fetch this page at this moment</p> 
+         <p class="lead text-white mt-4 mb-5">页面被偷走了！</p> 
          <div class="btn-wrapper"> 
          </div> 
         </div> 
@@ -32,4 +32,5 @@
      </div> 
     </section>
 	<?php $this->need('footer.php'); ?>
+
 
