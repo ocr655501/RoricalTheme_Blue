@@ -53,9 +53,9 @@ echo $commentClass;
                   </div>
                   <div class="pl-4" style="width:90%;">
                   	
-                    <h5 class="title text-success breakword"><span class="badge badge-pill badge-primary"><?php echo $comments->levels(); ?>.</span><?php $comments->author(); ?></h5>
+                    <h5 class="title text-success breakword"><?php $comments->author(); ?></h5>
                     <a class="text-success breakword"><?php $comments->date('Y-m-d H:i'); ?></a>
-                    <p class="breakword"><font size="2">@<?php echo convertip($comments->ip); ?></font></p>
+                    <p class="breakword"><font size="2">[IP] <?php echo convertip($comments->ip); ?></font></p>
                     <?php  
 					if($comments->parent){
     						$p_comment = getPermalinkFromCoid($comments->parent);   
@@ -67,7 +67,7 @@ echo $commentClass;
 						?> 
                     <p class="breakword"><?php $comments->content(); ?></p>
                     <?php if ($comments->status == 'waiting') { ?>
-						<span class="badge badge-pill badge-default text-white">评论审核ing...</span>
+						<span class="badge badge-pill badge-default text-white">需要审核</span>
 					<?php } ?>
                     <?php $comments->reply('<i class="fa fa-reply"></i>'); ?>
                   </div>
@@ -94,9 +94,6 @@ echo $commentClass;
 				<?php } ?>
 <?php } ?>
 
-        </div>
-        <div id="comment-refresh">
-        <?php $comments->listComments(); ?>
         </div>
         <?php if($this->allow('comment')): ?>
         <div id="<?php $this->respondId(); ?>" class="py-3 comment-text">
@@ -133,12 +130,11 @@ echo $commentClass;
     					</div>
     					</div>
 					</div>
-					<textarea class="form-control form-control-alternative" name="text" id="textarea" rows="8" required placeholder="每分钟限制发送一条评论哦"></textarea>
+					<textarea class="form-control form-control-alternative" name="text" id="textarea" rows="8" required placeholder="每 4 小时限制发送一条评论哦"></textarea>
 					
 					<?php endif; ?>
               </div>
-              
-              <div class="col-lg-3 ml-lg-auto mt-3">
+              <div class="col-lg-4 ml-lg-auto mt-3">
                 <button class="btn btn-lg btn-block btn-white" type="submit" id="add-comment-button">提交！</button>
                 <div class="cancel-comment-reply mt-5 align-items-center">
         			<?php $comments->cancelReply("取消回复","btn btn-danger"); ?>
@@ -155,6 +151,9 @@ echo $commentClass;
       </form>
       </div>
       <?php endif; ?>
+        <div id="comment-refresh">
+        <?php $comments->listComments(); ?>
+        </div>
         <div id="comments" class=""><?php $this->comments()->to($comments); ?><?php if ($comments->have()): ?><?php $comments->pageNav('<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>', 1, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination agination-lg justify-content-center', 'itemTag' => 'li', 'textTag' => 'a', 'currentClass' =>  'page-item active','prevClass' => 'page-item','nextClass' => 'page-item','linkClass' => 'page-link','itemClass' => 'page-item')); ?><?php endif; ?></div></div>
 <script>var r = document.getElementById('<? $this->respondId() ?>'),
         input = document.createElement('input');
@@ -190,11 +189,12 @@ echo $commentClass;
             	$("#add-comment-button").attr("disabled",false);	
             },
             error: function() {
-                
+            	alert("评论失败，请检查验证码或刷新页面重试。")
             },
             success: function(data) { 
                 var parser = new DOMParser()
                 var htmlDoc = parser.parseFromString(data, "text/html")
+                alert("评论提交成功！")
                 if(htmlDoc.getElementById("comment-refresh")){
                 ele = document.getElementsByClassName("comment-text")[0]
                 elehtml = document.getElementsByClassName("comment-text")[0].innerHTML
