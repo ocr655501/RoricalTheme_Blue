@@ -926,12 +926,12 @@ $time = ($time%60);
 }
 $value["seconds"] = floor($time);
 
-echo '<span class="btime">'.$value['days'].' 天 '.$value['hours'].' 小时';
+echo '<span class="btime">'.$value['days'].' days, '.$value['hours'].' hours';
 }else{
 echo '';
 }
 }
-//总访问量
+//Total Views
     function theAllViews()
         {
             $db = Typecho_Db::get();
@@ -945,4 +945,5 @@ echo '';
     //         $row = $db->fetchAll('SELECT `count` FROM `typecho_metas` WHERE name="原创文章"');
     //             echo number_format($row[0]['count']);
     //     }
+
 
