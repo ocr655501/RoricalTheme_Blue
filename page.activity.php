@@ -1,6 +1,6 @@
 <?php
 /**
- * 我的动态
+ * Whispers
  *
  * @package custom
  */
@@ -73,4 +73,5 @@
 
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
+
 
