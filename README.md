@@ -16,7 +16,6 @@ Theme originally created by [Rorical](https://github.com/Rorical)
 
 - Fixed code for Typecho version 1.2 support.
 - Changed main interface font to a cuter style, embedded in webpage.
-- IP district display for comments following somewhere's network service regulation.
 - Static site running time without any plugin. (Modifications may needed)
 - Independent blog statistics in *about* page. (Independent page template)
 - Whisper (personal posts) independent page. (Based on comments)
