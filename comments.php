@@ -10,8 +10,8 @@
                 </div>
               </div>
               <div class="pl-4">
-                <h4 class="display-3">评论区</h4>
-                <p><?php $this->commentsNum('空空如也', '1 条评论', '%d 条评论 '); ?></p>
+                <h4 class="display-3">Comments</h4>
+                <p><?php $this->commentsNum('Empty', '1 comment', '%d comments'); ?></p>
             </div>
                         
             
@@ -67,7 +67,7 @@ echo $commentClass;
 						?> 
                     <p class="breakword"><?php $comments->content(); ?></p>
                     <?php if ($comments->status == 'waiting') { ?>
-						<span class="badge badge-pill badge-default text-white">需要审核</span>
+						<span class="badge badge-pill badge-default text-white">Review needed</span>
 					<?php } ?>
                     <?php $comments->reply('<i class="fa fa-reply"></i>'); ?>
                   </div>
@@ -104,7 +104,7 @@ echo $commentClass;
           <div class="p-5">
             <div class="row align-items-center">
               <div class="col-lg-8">
-                <h3 class="text-white"><?php _e('写条评论吧'); ?></h3>
+                <h3 class="text-white"><?php _e('Write something...'); ?></h3>
                 <?php if($this->user->hasLogin()): ?>
                 <textarea class="form-control form-control-alternative" name="text" id="textarea" rows="8" required placeholder="<?php $this->user->screenName(); ?>，说点什么吧..."></textarea>
                 <?php else: ?>
@@ -116,38 +116,38 @@ echo $commentClass;
             						<div id="author-head" class="icon-shape rounded-circle text-white gravatar" style="width: 2rem;height: 2rem;"></div>
             						</span>
         					</div>
-        					<input class="form-control form-control-alternative" name="author" id="author" required="" value="" placeholder="昵称">
+        					<input class="form-control form-control-alternative" name="author" id="author" required="" value="" placeholder="Name">
     					</div>
     					</div>
     					<div class="col-md-4">
     					<div class="form-group">
-        					<input type="email" name="mail" id="mail" placeholder="邮箱" value="<?php $this->remember('mail'); ?>"  class="form-control form-control-alternative" required/>
+        					<input type="email" name="mail" id="mail" placeholder="Mail" value="<?php $this->remember('mail'); ?>"  class="form-control form-control-alternative" required/>
     					</div>
     					</div>
     					<div class="col-md-4">
     					<div class="form-group">
-        					<input type="url" name="url" id="url" value="<?php $this->remember('url'); ?>" placeholder="个人网站 (选填, http://)" value="<?php $this->remember('mail'); ?>"  class="form-control form-control-alternative" />
+        					<input type="url" name="url" id="url" value="<?php $this->remember('url'); ?>" placeholder="Personal Webpage (Optional, http://)" value="<?php $this->remember('mail'); ?>"  class="form-control form-control-alternative" />
     					</div>
     					</div>
 					</div>
-					<textarea class="form-control form-control-alternative" name="text" id="textarea" rows="8" required placeholder="每 4 小时限制发送一条评论哦"></textarea>
+					<textarea class="form-control form-control-alternative" name="text" id="textarea" rows="8" required placeholder="Write something..."></textarea>
 					
 					<?php endif; ?>
               </div>
               <div class="col-lg-4 ml-lg-auto mt-3">
-                <button class="btn btn-lg btn-block btn-white" type="submit" id="add-comment-button">提交！</button>
+                <button class="btn btn-lg btn-block btn-white" type="submit" id="add-comment-button">Submit</button>
                 <div class="cancel-comment-reply mt-5 align-items-center">
-        			<?php $comments->cancelReply("取消回复","btn btn-danger"); ?>
+        			<?php $comments->cancelReply("Cancel Reply","btn btn-danger"); ?>
         		</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-        <!-- 新增代码 -->
+
         <?php $security = $this->widget('Widget_Security'); ?>
             <input type="hidden" name="_" value="<?php echo $security->getToken($this->request->getReferer())?>">
-            <!-- 新增 代码结束 -->
+
       </form>
       </div>
       <?php endif; ?>
@@ -189,12 +189,12 @@ echo $commentClass;
             	$("#add-comment-button").attr("disabled",false);	
             },
             error: function() {
-            	alert("评论失败，请检查验证码或刷新页面重试。")
+            	alert("Submit failed, try refresh the page and try again!")
             },
             success: function(data) { 
                 var parser = new DOMParser()
                 var htmlDoc = parser.parseFromString(data, "text/html")
-                alert("评论提交成功！")
+                alert("Submit successful!")
                 if(htmlDoc.getElementById("comment-refresh")){
                 ele = document.getElementsByClassName("comment-text")[0]
                 elehtml = document.getElementsByClassName("comment-text")[0].innerHTML
@@ -299,4 +299,5 @@ echo $commentClass;
 if(window.onload){window.onload()}
 
 </script>
+
 
