@@ -1,0 +1,41 @@
+
+@font-face {font-family: "MiSans";
+  src: url('MiSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'GyyeonggiTitle';
+    font-weight: 300;
+    font-style: normal;
+        url('/gyeonggiTitle-Light.woff2') format('woff2'),
+    font-display: swap;
+}
+
+@font-face {font-family: "GyyeonggiTitle";
+    font-weight: 500;
+    font-style: normal;
+  src: url('GyyeonggiTitle.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'GyyeonggiTitle';
+    font-weight: 700;
+    font-style: normal;
+        url('gyeonggiTitle-Bold.woff2') format('woff2'),
+    font-display: swap;
+}
+
+.content p:not(.description){
+  font-family: "MiSans" !important;
+  font-size: 1rem;
+}
+.comments p {
+	font-family: "MiSans" !important;
+	font-size: 1rem;
+}
+.content strong {
+    font-family: "MiSans" !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
