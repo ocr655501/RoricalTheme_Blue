@@ -124,10 +124,25 @@ function convertips($ip){
   $ipaddr = preg_replace('/^s*/is', '', $ipaddr);  
   $ipaddr = preg_replace('/s*$/is', '', $ipaddr);  
   if(preg_match('/http/i', $ipaddr) || $ipaddr == '') {  
-    $ipaddr = '可能来自火星';  
+    $ipaddr = '位置不明';  
   }
   $ipaddr = iconv('gbk', 'utf-8//IGNORE', $ipaddr); 
-  $ipaddr = substr($ipaddr,0,6);
-  return $ipaddr;  
+  $ipaddr2 = substr($ipaddr,0,6);
+  if (substr($ipaddr,0,6) == '中国'){
+      $ipaddr2 = substr($ipaddr,9,6);
+      if (substr($ipaddr,9,9) == '黑龙江' || substr($ipaddr,9,9) == '内蒙古'){
+          $ipaddr2 = substr($ipaddr,9,9);
+      }
+  }
+  if (substr($ipaddr,0,9) == '俄罗斯' || substr($ipaddr,0,12) == '新加坡' || substr($ipaddr,0,12) == '加拿大' || substr($ipaddr,0,12) == '新西兰'){
+      $ipaddr2 = substr($ipaddr,0,9);
+  }
+  if (substr($ipaddr,0,12) == '澳大利亚' || substr($ipaddr,0,12) == '马来西亚'){
+      $ipaddr2 = substr($ipaddr,0,12);
+  }
+  if (substr($ipaddr,0,9) == '局域网'){
+      $ipaddr2 = '测试发布通道';
+  }
+  return $ipaddr2;  
 }
 ?>
