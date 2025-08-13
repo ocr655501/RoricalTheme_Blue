@@ -45,9 +45,9 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
                 </div>
-                <input class="form-control" type="text" id="s" name="s" placeholder="输入文字">
+                <input class="form-control" type="text" id="s" name="s" placeholder="Enter...">
               </div>
-              <input class="btn btn-1 btn-outline-primary submit" type="submit" value="搜索">
+              <input class="btn btn-1 btn-outline-primary submit" type="submit" value="Search">
             </form>
             </div>
     	</div>
@@ -56,3 +56,4 @@
     </div>
 
 </section>
+
