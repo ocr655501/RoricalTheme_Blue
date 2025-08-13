@@ -21,7 +21,7 @@
               <span class="ni ni-bold-left" id="toc-miao"></span>
             </a>
         	<div class="card-img tu container container-lg py-5 toc">
-        		<strong>Article Contents</strong>
+        		<strong>Contents</strong>
         		<div class="toc-list">
         		<? getCatalog(); ?>
         		</div>
@@ -191,4 +191,5 @@
 <?php $this->need('sidebar.php'); ?>
 
 <?php $this->need('footer.php'); ?>
+
 
