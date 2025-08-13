@@ -1,6 +1,6 @@
 <?php
 /**
- * 炒鸡可爱的一款主题，魔改 & 适配 Typecho 1.2！
+ * RoricalTheme Blue English version (Beta)
  * 
  * @package Rorical Blue
  * @author Rorical & OCR655501
@@ -77,7 +77,7 @@ $this->need('header.php');
         <a href="<? print($tags['permalink']) ?>" class="badge badge-success"><? print($tags['name']) ?></a>
         <?php endforeach;?>
 		<?php else: ?>
-		<i class="fa fa-tags"></i> <a class="badge badge-default text-white">无标签..</a>
+		<i class="fa fa-tags"></i> <a class="badge badge-default text-white">No tag</a>
         <?php endif;?>
         </span>
         <span class="col-xs-11"><i class="fa fa-user-circle-o"></i><a class="badge badge-warning" href="<?php $this->author->permalink(); ?>"><?php $this->author();?></a></span>
@@ -97,8 +97,8 @@ $this->need('header.php');
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
         <?php $this->pageNav('<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>', 1, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination agination-lg justify-content-center', 'itemTag' => 'li', 'textTag' => 'a', 'currentClass' =>  'page-item active','prevClass' => 'page-item','nextClass' => 'page-item','linkClass' => 'page-link','itemClass' => 'page-item'));?>
-<!--        <?php $this->pageLink('下一页','next'); ?>-->
-<!--<?php $this->pageLink('上一页'); ?>-->
+<!--        <?php $this->pageLink('Next >','next'); ?>-->
+<!--<?php $this->pageLink('< Prev'); ?>-->
 		</div>
 		</div>
 		</nav>
@@ -106,3 +106,4 @@ $this->need('header.php');
     </section>
 
 <?php $this->need('footer.php');?>
+
