@@ -30,15 +30,15 @@
                 <div class="card-profile-stats d-flex justify-content-center">
                   <div>
                     <span class="heading"><?php echo ViewsCounter_Plugin::getViews(); ?></span>
-                    <span class="description">浏览</span>
+                    <span class="description">views</span>
                   </div>
                   <div>
                     <span class="heading"><?php art_count($this->cid); ?></span>
-                    <span class="description">字数</span>
+                    <span class="description">words</span>
                   </div>
                   <div>
                     <span class="heading"><?php $this->commentsNum('%d'); ?></span>
-                    <span class="description">评论</span>
+                    <span class="description">comments</span>
                   </div>
                 </div>
               </div>
@@ -49,7 +49,7 @@
         			<a href="<? print($tags['permalink']) ?>" class="btn btn-sm btn-info mr-4"><? print($tags['name']) ?></a>
         			<?php endforeach; ?>
         			<?php else: ?>
-        			<a class="btn btn-sm btn-info mr-4">无标签..</a>
+        			<a class="btn btn-sm btn-info mr-4">No tag</a>
         			<?php endif; ?>
         			<?php foreach( $this->categories as $categories): ?>
         			<a href="<? echo $categories['permalink']; ?>" class="btn btn-sm btn-default float-right"><? echo $categories['name']; ?></a	>
@@ -82,3 +82,4 @@
 
 <?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
+
