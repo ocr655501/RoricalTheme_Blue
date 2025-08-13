@@ -1,7 +1,9 @@
 # Rorical Blue
 
 > I finally decided to add a hasty English version, if you need to show your personal information in English (Like you are a researcher, a CV display, etc.)
+> 
 > The English version is made **in hasty**, so may have untranslated items. If so, you can start an issue and I'll check whether it can be resolved.
+> 
 > 以前的中文版本还在，可以**切换分支**。
 
 **I did not actually learned php, pls don't scold me too much on my rubbish code.**
