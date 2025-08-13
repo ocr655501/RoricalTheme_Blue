@@ -8,10 +8,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title><?php $this->archiveTitle(array(
-            'category'  =>  _t('%s下的文章'),
-            'search'    =>  _t('包含关键字 %s 的文章'),
-            'tag'       =>  _t('标签 %s 下的文章'),
-            'author'    =>  _t('%s 的文章')
+            'category'  =>  _t('Posts of %s'),
+            'search'    =>  _t('Posts include keyword %s'),
+            'tag'       =>  _t('Posts include tag %s'),
+            'author'    =>  _t('%s written posts')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <!-- Analytics -->
     <?php $this->options->Analytic() ?>
@@ -49,7 +49,7 @@
 <body>
 
 <!--[if lt IE 8]>
-    <div class="browsehappy" role="dialog"><?php _e('您当前使用的浏览器版本过低。为了正常访问本网站, 请访问 <a href="https://www.google.cn/intl/zh-CN/chrome/"> 下载推荐的浏览器。</a>'); ?>.</div>
+    <div class="browsehappy" role="dialog"><?php _e('The browser version you are currently using is too old. To access this website properly, please visit <a href="https://www.google.cn/intl/zh-CN/chrome/"> to download the recommended browser.</a>'); ?>.</div>
 <![endif]-->
 
 <header class="header-global">
@@ -100,7 +100,7 @@
             <i class="ni ni-spaceship"></i>
                     </div>
                     <div class="media-body ml-3">
-                      <h6 class="heading text-primary mb-md-1">主页</h6><!--<?php if($this->is('index')): ?>text-danger<?php else: ?>text-primary<?php endif; ?>-->
+                      <h6 class="heading text-primary mb-md-1">Index</h6><!--<?php if($this->is('index')): ?>text-danger<?php else: ?>text-primary<?php endif; ?>-->
                     </div>
             </a>
             
@@ -121,7 +121,7 @@
             <li class="nav-item dropdown">
               <a href="#" class="nav-link" data-toggle="dropdown" role="button">
                 <i class="ni ni-collection d-lg-none"></i>
-                <span class="nav-link-inner--text">分类</span>
+                <span class="nav-link-inner--text">Categories</span>
               </a>
               <div class="dropdown-menu">
               <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
@@ -134,7 +134,7 @@
             <?php else: ?>
             	<li class="nav-item">
             		<a href="<?php $this->options->siteUrl(); ?>" class="nav-link">
-                		<span class="nav-link-inner--text">主页</span>
+                		<span class="nav-link-inner--text">Index</span>
             		</a>
             	</li>
             	<?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
@@ -193,4 +193,5 @@
     	.shape-background{background: var(--phone-bg-image);}
     	
     }
+
 </style>
