@@ -55,7 +55,6 @@ echo $commentClass;
                   	
                     <h5 class="title text-success breakword"><?php $comments->author(); ?></h5>
                     <a class="text-success breakword"><?php $comments->date('Y-m-d H:i'); ?></a>
-                    <p class="breakword"><font size="2">[IP] <?php echo convertip($comments->ip); ?></font></p>
                     <?php  
 					if($comments->parent){
     						$p_comment = getPermalinkFromCoid($comments->parent);   
@@ -299,5 +298,6 @@ echo $commentClass;
 if(window.onload){window.onload()}
 
 </script>
+
 
 
