@@ -8,50 +8,50 @@ function convertip($ip){
 }
 
 function themeConfig($form) {
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点 icon 地址'), _t('在这里填入一个图片 URL 地址, 在网站标签页上加一个 icon, 作为博客的小图标'));
+    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('Site Icon'), _t('Add a picture URL, will show as your webpage icon on title.'));
     $form->addInput($logoUrl);
-    $AvatarUrl = new Typecho_Widget_Helper_Form_Element_Text('AvatarUrl', NULL, NULL, _t('你的大头'), _t('在这里填入一个图片 URL 地址, 在主页上作为你的大头。'));
+    $AvatarUrl = new Typecho_Widget_Helper_Form_Element_Text('AvatarUrl', NULL, NULL, _t('Page Icon'), _t('Add a better resolution picture URL, will show as your webpage icon on main page.'));
     $form->addInput($AvatarUrl);
     
-    $pcbackgroundUrl = new Typecho_Widget_Helper_Form_Element_Text('pcbackgroundUrl', NULL, NULL, _t('电脑主页背景'), _t('在这里填入电脑的背景图片 URL 地址, 在电脑端或者平板端作为主页背景展示。'));
-    $mobilebackgroundUrl = new Typecho_Widget_Helper_Form_Element_Text('mobilebackgroundUrl', NULL, NULL, _t('手机主页背景'), _t('在这里填入手机的背景图片 URL 地址, 在手机端作为主页背景展示。'));
+    $pcbackgroundUrl = new Typecho_Widget_Helper_Form_Element_Text('pcbackgroundUrl', NULL, NULL, _t('PC Background'), _t('Add a PC wallpaper URL, will display as background on PCs.'));
+    $mobilebackgroundUrl = new Typecho_Widget_Helper_Form_Element_Text('mobilebackgroundUrl', NULL, NULL, _t('Mobile Background'), _t('Add a smartphone wallpaper URL, will display as background on mobile phones.'));
     $form->addInput($pcbackgroundUrl);
     $form->addInput($mobilebackgroundUrl);
     
-    $randompicUrl = new Typecho_Widget_Helper_Form_Element_Text('randompicUrl', NULL, NULL, _t('随机图片'), _t('在这里填入一个图片 URL 地址, 它会显示在博客图文底部, 没有文章切换时会随机抽一张出来占位。'));
+    $randompicUrl = new Typecho_Widget_Helper_Form_Element_Text('randompicUrl', NULL, NULL, _t('Random Image'), _t('Add a local image folder URL, will randomly display on post title if no specified title image was given.'));
     $form->addInput($randompicUrl);
     
     $powermode = new Typecho_Widget_Helper_Form_Element_Radio('powermode',
-        array('able' => _t('启用'),
-            'disable' => _t('禁止'),
+        array('able' => _t('On'),
+            'disable' => _t('Off'),
         ),
-        'disable', _t('PowerMode打字特效'), _t('默认禁止，可以打开，如果有同名插件的话可能要倒过来操作'));
+        'disable', _t('PowerMode type effect'), _t('Trigger internal PowerMode effect. May invert if you have same-name plugin.'));
     $form->addInput($powermode);
     $clickanime = new Typecho_Widget_Helper_Form_Element_Radio('clickanime',
-        array('able' => _t('启用'),
-            'disable' => _t('禁止'),
+        array('able' => _t('On'),
+            'disable' => _t('Off'),
         ),
-        'disable', _t('鼠标点击特效'), _t('默认禁止，可以打开，如果有同名插件的话可能要倒过来操作'));
+        'disable', _t('Mouse clicking effect'), _t('Trigger internal mouse clicking effect effect. May invert if you have similar plugin.'));
     $form->addInput($clickanime);
     
-    $Analytic = new Typecho_Widget_Helper_Form_Element_Textarea('Analytic', NULL, NULL, _t('填写什么网站记录代码，类似 Google Analytics 等'), _t('给你加进Header，可以不填'));
+    $Analytic = new Typecho_Widget_Helper_Form_Element_Textarea('Analytic', NULL, NULL, _t('Input Analytics code, like Google Analytics'), _t('Will be added into header, optional'));
     $form->addInput($Analytic);
     
-    $navbarIcons = new Typecho_Widget_Helper_Form_Element_Textarea('navbarIcons', NULL, _t('fa fa-github$$Github$$https://github.com/OCR655501/'), _t('自定义主页上面的标志，小心不要输错，输错连主页都看不到了哦'), _t('一行一个，格式为：图标的class$$显示文字$$点击跳转的链接'));
+    $navbarIcons = new Typecho_Widget_Helper_Form_Element_Textarea('navbarIcons', NULL, _t('fa fa-github$$Github$$https://github.com/OCR655501/'), _t('Customize icons on index page, be careful: a wrong input will break your index page.'), _t('One per row: icon_class$$description$$jump_link_on_click'));
     $form->addInput($navbarIcons);
     
     $navbar = new Typecho_Widget_Helper_Form_Element_Radio('navbar',
-        array('able' => _t('下拉式'),
-            'disable' => _t('平铺式'),
+        array('able' => _t('Drop-down'),
+            'disable' => _t('Flat'),
         ),
-        'able', _t('网站导航栏对于独立页面的表现形式'), _t('默认为下拉式，不习惯的话可以改成和别的博客一样的平铺式。移动端强制下拉式。'));
+        'able', _t('Presentation of website navigation bar for independent pages'), _t('Default is drop-down style. You can change it to the flat style like other blogs if you like. Mobile version is forced to drop down.'));
     $form->addInput($navbar);
     
     $toc = new Typecho_Widget_Helper_Form_Element_Radio('toc',
-        array('able' => _t('开启'),
-            'disable' => _t('关闭'),
+        array('able' => _t('On'),
+            'disable' => _t('Off'),
         ),
-        'disable', _t('文章侧边的导航默认开不开'), _t('默认为关闭，但是导航栏是一直都在的'));
+        'disable', _t('Trigger article side navigation'), _t('Default is off, but navigation bar will always there.'));
     $form->addInput($toc);
 }
 
@@ -226,7 +226,7 @@ class Typecho_Widget_Helper_PageNavigator_Box extends Typecho_Widget_Helper_Page
 
 
 function themeFields($layout) {
-    $pic = new Typecho_Widget_Helper_Form_Element_Text('pic', NULL, NULL, _t('文章头图'), _t('在这里填入一个图片URL地址，作为文章头图。建议使用附件的地址添加。'));
+    $pic = new Typecho_Widget_Helper_Form_Element_Text('pic', NULL, NULL, _t('Title Image'), _t('Enter an image URL here to use as the article title image. Recommend using an attachment URL.'));
     $layout->addItem($pic);
 }
 
@@ -303,7 +303,7 @@ function theNext($widget, $randompicUrl): void
   $link = '<a class="carousel" href="'.$ji->permalink.'" title="'.$ji->title.'"><div style="background-image:url('.$pic.');" class="card-img tu"></div><div class="carousel-indicators"><h2 class="heading-title text-info blackback" style="text-transform:none;">'.$ji->title.'</h2><i class="ni ni-bold-right"></i></div></a>';
   echo $link;
   } else {
-  $link = '<a class="carousel" title="没有啦"><div style="background-image:url('.$randompicUrl.');" class="card-img tu"></div><div class="carousel-indicators"><h3 class="heading-title text-info blackback" style="text-transform:none;">没啦</h3></div></a>';
+  $link = '<a class="carousel" title="No more thing"><div style="background-image:url('.$randompicUrl.');" class="card-img tu"></div><div class="carousel-indicators"><h3 class="heading-title text-info blackback" style="text-transform:none;">没啦</h3></div></a>';
   echo $link;
   }
 }
@@ -730,8 +730,8 @@ class Widget_Comments_Archive extends Widget_Abstract_Comments
             'beforeDate'    =>  '',
             'afterDate'     =>  '',
             'dateFormat'    =>  $this->options->commentDateFormat,
-            'replyWord'     =>  _t('回复'),
-            'commentStatus' =>  "_t('审核ing...')",
+            'replyWord'     =>  _t('Reply'),
+            'commentStatus' =>  "_t('Review needed')",
             'avatarSize'    =>  32,
             'defaultAvatar' =>  NULL
         ));
@@ -792,7 +792,7 @@ class Widget_Comments_Archive extends Widget_Abstract_Comments
     public function reply($word = '')
     {
         if ($this->options->commentsThreaded && !$this->isTopLevel && $this->parameter->allowComment) {
-            $word = empty($word) ? _t('回复') : $word;
+            $word = empty($word) ? _t('Reply') : $word;
             $this->pluginHandle()->trigger($plugged)->reply($word, $this);
             
             if (!$plugged) {
@@ -812,7 +812,7 @@ class Widget_Comments_Archive extends Widget_Abstract_Comments
     public function cancelReply($word = '',$class = "")
     {
         if ($this->options->commentsThreaded) {
-            $word = empty($word) ? _t('取消回复') : $word;
+            $word = empty($word) ? _t('Cancel Reply') : $word;
             $this->pluginHandle()->trigger($plugged)->cancelReply($word, $this);
             
             if (!$plugged) {
@@ -945,3 +945,4 @@ echo '';
     //         $row = $db->fetchAll('SELECT `count` FROM `typecho_metas` WHERE name="原创文章"');
     //             echo number_format($row[0]['count']);
     //     }
+
