@@ -18,7 +18,8 @@ Theme originally created by [Rorical](https://github.com/Rorical)
 - Changed main interface font to a cuter style, embedded in webpage.
 - Static site running time without any plugin. (Modifications may needed)
 - Independent blog statistics in *about* page. (Independent page template)
-- Whisper (personal posts) independent page. (Based on comments)
+- Whisper (personal posts) independent page. (Based on comments system)
+- Permanent local assets, needn't to consider unavailable CDN elements.
 
 ## Highlights
 
