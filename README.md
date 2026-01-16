@@ -1,14 +1,14 @@
 # Rorical Blue
 
-> I finally decided to add a hasty English version, if you need to show your personal information in English (Like you are a researcher, a CV display, etc.) in a Typecho blog, you can try this theme.
+> I finally decided to add a hasty English version, considering if someone will use Typecho to build a CV website. If you need to show your personal career in English (Suppose you are a researcher, or you need a CV display, and more) in a Typecho blog, you can try this theme.
 > 
-> The English version is made **in hasty**, so may have untranslated items. If so, you can start an issue and I'll check whether it can be resolved.
+> **NOTICE:** The English version is made **in hasty**, so may have untranslated items. If so, you can start an issue and I'll check whether it can be resolved.
 > 
 > 以前的中文版本还在，可以**切换分支**。
 
 **I did not actually learned php, pls don't scold me too much on my rubbish code.**
 
-It's a Typecho theme with a bit of cute, which extended more here.
+It's a Typecho theme with a bit of cute, which extended more.
 
 Theme originally created by [Rorical](https://github.com/Rorical)
 
@@ -19,7 +19,7 @@ Theme originally created by [Rorical](https://github.com/Rorical)
 - Static site running time without any plugin. (Modifications may needed)
 - Independent blog statistics in *about* page. (Independent page template)
 - Whisper (personal posts) independent page. (Based on comments system)
-- Permanent local assets, needn't to consider unavailable CDN elements.
+- Permanent local assets, needn't to worry CDN elements become unavailable in the future.
 
 ## Highlights
 
@@ -34,4 +34,4 @@ And the original author of [Rorical](https://github.com/Rorical):
 
 https://github.com/Rorical/RoricalTheme/
 
-**Notice:** Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter) by [quarkay](https://www.quarkay.com/), please install the plugin before apply this theme, othewise may encounter page crash
+**Notice:** Page views based on plugin [ViewsCounter](https://github.com/Quarkay/Typecho-ViewsCounter) by [quarkay](https://www.quarkay.com/), please install this plugin before applying this theme, othewise may encounter page crash
